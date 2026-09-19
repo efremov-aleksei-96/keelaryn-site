@@ -26,49 +26,101 @@
     <h2>Purpose</h2>
     <p>
       Keelaryn is a personal knowledge-management and automation system.
+      This policy describes how Keelaryn handles Google user data when the
+      user authorizes Google Drive access.
     </p>
 
     <h2>Google account authorization</h2>
     <p>
       Keelaryn accesses Google Drive only after the user explicitly
       authorizes access through Google's OAuth authorization process.
+      The requested Google Drive permission allows Keelaryn to see, create,
+      edit, move, and delete Drive files as required by the user's Keelaryn
+      workflow.
     </p>
 
-    <h2>Google Drive data</h2>
+    <h2>Google user data accessed</h2>
     <p>
-      Depending on the operation requested by the user, Keelaryn may
-      read, create, update, move, or delete files and folders necessary
-      to operate the user's Keelaryn workflow.
+      Keelaryn may access Google Drive file and folder content, names,
+      identifiers, metadata, hierarchy, and other Drive information needed
+      to identify and operate the user's Drive-backed Keelaryn repository.
     </p>
 
+    <h2>How Google user data is used</h2>
     <p>
-      Google Drive data is used only for Keelaryn functionality and for
-      operations initiated or configured by the user.
+      Google Drive data is used only to provide Keelaryn functionality and
+      to perform operations initiated or configured by the user. Depending
+      on the requested operation, Keelaryn may read, create, update, move,
+      reconcile, or delete files and folders.
     </p>
 
-    <h2>OAuth credentials</h2>
+    <h2>Storage and retention</h2>
     <p>
-      OAuth credentials used by the Keelaryn runtime are stored on
-      systems controlled by the operator and are used only to
-      authenticate access to the authorized Google account.
+      Persistent Keelaryn content stored in Google Drive remains in the
+      user's Google Drive until it is changed or deleted by the user or by
+      a Keelaryn operation the user has initiated or configured.
+    </p>
+    <p>
+      Keelaryn may temporarily process or retain working data, logs, and
+      operational metadata on systems controlled by the operator when
+      necessary to perform or validate Keelaryn operations. Such data is
+      retained only for operational, troubleshooting, rollback, or
+      provenance needs and is removed or rotated when it is no longer
+      required for those purposes.
+    </p>
+    <p>
+      OAuth credentials may be retained on operator-controlled systems so
+      that authorized Keelaryn operations can continue. The user may revoke
+      Google OAuth access through their Google Account permissions, and
+      credentials can also be replaced or deleted from the Keelaryn
+      runtime.
     </p>
 
-    <h2>Sale and advertising</h2>
+    <h2>Sharing and disclosure</h2>
     <p>
-      Keelaryn does not sell Google user data and does not use Google
-      user data for advertising or advertising profiles.
+      Keelaryn does not sell Google user data and does not disclose Google
+      user data to advertisers, data brokers, or unrelated third parties.
+    </p>
+    <p>
+      Google user data may be processed by infrastructure or service
+      providers explicitly configured by the operator only when necessary
+      to provide requested Keelaryn functionality. Such processing is
+      limited to that operational purpose.
     </p>
 
-    <h2>Sharing</h2>
+    <h2>Security</h2>
     <p>
-      Keelaryn does not intentionally disclose Google user data to
-      advertisers or unrelated third parties.
+      Keelaryn uses HTTPS for communications with Google APIs. OAuth
+      credentials and operational data stored by the Keelaryn runtime are
+      kept on operator-controlled systems and protected using access
+      controls appropriate to those systems.
+    </p>
+
+    <h2>Advertising, sale, and AI/ML training</h2>
+    <p>
+      Keelaryn does not use Google user data for advertising, advertising
+      profiles, sale to third parties, credit or lending decisions, or
+      unrelated commercial purposes.
+    </p>
+    <p>
+      Keelaryn does not use Google Workspace API data to develop, improve,
+      or train generalized or non-personalized artificial intelligence or
+      machine-learning models.
+    </p>
+
+    <h2>Deletion and revocation</h2>
+    <p>
+      The user can delete Drive-backed Keelaryn files directly in Google
+      Drive or through authorized Keelaryn operations. The user can also
+      revoke Keelaryn's Google account access at any time through Google
+      Account permissions. Revocation prevents future API access using the
+      revoked authorization.
     </p>
 
     <h2>Public website</h2>
     <p>
-      This public website does not require Google Drive access and does
-      not display the contents of the user's Keelaryn repository.
+      This public website does not require Google Drive access and does not
+      display the contents of the user's Keelaryn repository.
     </p>
 
     <h2>Personal use</h2>
@@ -78,9 +130,9 @@
 
     <h2>Google API Services User Data Policy</h2>
     <p>
-      Keelaryn's use of information received from Google APIs is
-      intended to comply with the Google API Services User Data Policy,
-      including applicable Limited Use requirements.
+      Keelaryn's use of information received from Google APIs is intended
+      to comply with the Google API Services User Data Policy, including
+      applicable Limited Use requirements.
     </p>
   </main>
 </body>
